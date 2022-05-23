@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   end
 
   def show
-    @books = Book.all
+    @books = Book.all.order(:title)
   end
 
   def create
