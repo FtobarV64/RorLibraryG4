@@ -1,2 +1,9 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<form method="get" action="books/create">
+  <div class="form-group">
+    Título: <input name="title">
+  <div>
+  Autor: <input name="author">
+  Prestado el: <input name="lend" type="date">
+  Regresado el: <input name="returned" type="date">
+  <input type="submit" value="Enviar">
+</form>
